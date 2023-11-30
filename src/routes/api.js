@@ -12,11 +12,22 @@ const initApiRoutes = (app) => {
 
     app.post('/sendHelp', homeController.sendHelp);
 
+<<<<<<< HEAD
     router.post('/api/login', customerController.handleLoginService);
     router.post('/api/register', customerController.handleRegisterService);
 
     router.post('/api/login-partner', partnerControllers.handleLoginPartnerService);
     router.post('/api/register-partner', partnerControllers.handleRegisterPartnerService);
+=======
+  router.post("/api/login", customerController.handleLogin);
+  router.post("/api/register", customerController.handleRegister);
+
+  router.post("/api/login-partner", partnerControllers.handleLoginPartner);
+  router.post(
+    "/api/register-partner",
+    partnerControllers.handleRegisterPartner
+  );
+>>>>>>> 93db5d37d885be35dd5c528e10405ec510253af8
 
     router.get('/api/get-all-services', partnerControllers.getAllServices);
 
